@@ -15,6 +15,7 @@ export const HeroImage = styled.img`
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  filter: brightness(70%)
 `;
 
 export const ContentWrapper = styled.div`
@@ -33,7 +34,7 @@ export const Title = styled.h1`
   margin-bottom: 20px;
   font-size: 30px;
   @media (max-width: 768px){
-    font-size:20px;
+    font-size:17px;
     width:150%;
   }
 `;

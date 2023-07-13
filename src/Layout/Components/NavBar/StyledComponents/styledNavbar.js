@@ -36,7 +36,7 @@ export const MenuItem = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 20%;
   }
 `;
 
@@ -50,9 +50,9 @@ export const ListOfNavItems = styled.ul`
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: auto;
-    padding: 20px;
+    padding: 50px;
     background-color: rgba(0, 0, 0, 0.93);
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
     visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
