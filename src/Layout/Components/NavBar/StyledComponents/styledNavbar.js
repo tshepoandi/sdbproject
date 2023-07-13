@@ -23,7 +23,7 @@ export const Logo = styled.img`
 export const MenuItem = styled.li`
   display: inline-block;
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 30%;
   cursor: pointer;
   &:hover {
     background-color: #FF66CC;
@@ -46,21 +46,17 @@ export const ListOfNavItems = styled.ul`
   margin-right: 60px;
 
   @media (max-width: 768px) {
+    padding-top:35%;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
-    width: 80%;
-    height: auto;
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.93);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
     visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
-    /* Add additional styles for better scrolling experience */
-    overflow-y: scroll;
-    max-height: 60vh;
   }
 `;
 
