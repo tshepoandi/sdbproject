@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
+import HeroPage from './Layout/Components/HeroSection';
+import NavigationBar from './Layout/Components/NavBar';
+import Programmes from './Layout/Components/Programmes';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <>
+    <NavigationBar/>
+    <HeroPage/>
+    <Programmes/>
+  </>
+  )
 }
 
 export default App;
