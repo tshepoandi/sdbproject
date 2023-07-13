@@ -18,7 +18,7 @@ export const Container = styled.div`
 `;
 
 export const Photo = styled.img`
-  width: 50%;
+  width: 40%;
   height: auto;
   object-fit: cover;
   margin-top:30px;
