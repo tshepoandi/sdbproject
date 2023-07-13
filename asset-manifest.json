@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tshepoandi/github.io/sdbproject/static/css/main.bb0f4192.css",
+    "main.js": "/tshepoandi/github.io/sdbproject/static/js/main.c5dc757a.js",
+    "static/js/787.3d90fb4d.chunk.js": "/tshepoandi/github.io/sdbproject/static/js/787.3d90fb4d.chunk.js",
+    "index.html": "/tshepoandi/github.io/sdbproject/index.html",
+    "main.bb0f4192.css.map": "/tshepoandi/github.io/sdbproject/static/css/main.bb0f4192.css.map",
+    "main.c5dc757a.js.map": "/tshepoandi/github.io/sdbproject/static/js/main.c5dc757a.js.map",
+    "787.3d90fb4d.chunk.js.map": "/tshepoandi/github.io/sdbproject/static/js/787.3d90fb4d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb0f4192.css",
+    "static/js/main.c5dc757a.js"
+  ]
+}
