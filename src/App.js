@@ -1,5 +1,6 @@
 import './App.css';
 import HeroPage from './Layout/Components/HeroSection';
+import MecaTable from './Layout/Components/MercaCourses';
 
 import NavigationBar from './Layout/Components/NavBar';
 import OurMission from './Layout/Components/OurMission';
@@ -11,6 +12,7 @@ function App() {
     <HeroPage id="Home"/>
     <OurMission id="OurMission"/>
     <Programmes id="Programmes"/>
+    <MecaTable/>
   </>
   )
 }
