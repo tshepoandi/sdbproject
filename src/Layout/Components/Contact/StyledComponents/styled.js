@@ -5,7 +5,6 @@ export const ContactForm = styled.form`
   flex-direction: column;
   width: 300px;
   padding:20px;
-  border: solid red;
 `;
 
 export const FormGroup = styled.div`
@@ -54,17 +53,22 @@ export const Heading = styled.h1`
 
 export const Divider = styled.div`
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content: space-between;
+  margin:10%;
 `
 
 export const AboutUs = styled.h1`
-  fontSize: 100px;
+  font-size:5rem;
   color:#0F52BA;
-  margin-left:5%;
 `
 
 
-export const paragraph = styled.p`
+export const Paragraph = styled.p`
+  font-size: 15px;
+`
 
+export const Image = styled.img`
+  width:100%;
+  border-radius:10px;
 `

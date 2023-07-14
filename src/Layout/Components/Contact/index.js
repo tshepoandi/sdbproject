@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
 import { FormGroup } from 'react-bootstrap';
-import { AboutUs, Button, ContactForm, Divider, Heading, Input, Label, TextArea } from './StyledComponents/styled';
+import { AboutUs, Button, ContactForm, Divider, Heading, Image, Input, Label, Paragraph, TextArea } from './StyledComponents/styled';
 // import 
 
 const Contact = () => {
@@ -18,9 +18,31 @@ const Contact = () => {
 
   return (
     <Divider>
-      <AboutUs>
-        About Us
-      </AboutUs>
+      <div style={{ position: 'relative' }}>
+      <Image src={process.env.PUBLIC_URL+"/aboutus.jpg"} alt="About Us" />
+      <div
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          textAlign: 'center',
+          color: 'white',
+        }}
+      >
+        <AboutUs>About Us</AboutUs>
+        <p>
+          Sedibeng Training Centre has been in the vocational training business since 1975, first entering the market as Vaal Triangle Training Centre.
+        </p>
+        <p>
+          With the enactment of the Skills Development Act, 1998, the Centre was registered as an association incorporated under Section 21 of the Companies Act of 1973 in March 2000, trading as SEDIBENG TRAINING CENTRE.
+        </p>
+        <p>
+          With change came better opportunities and enhancement for our country, and therefore, the new dispensation meant that certain adjustments needed to be made in order to accommodate the different rules and regulations pertaining thereto.
+        </p>
+      </div>
+    </div>
+      
        <ContactForm onSubmit={handleSubmit}>
           <Heading>
             Contact Us
