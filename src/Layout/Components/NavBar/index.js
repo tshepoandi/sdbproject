@@ -6,14 +6,15 @@ import {
   ListOfNavItems,
   HamburgerIcon
 } from './StyledComponents/styledNavbar.js';
+import { BrowserRouter as Router } from "react-router-dom";
 
-const NavigationBar = () => {
+  const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-    const [activeLink, setActiveLink] = useState("home");
+  const [activeLink, setActiveLink] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -34,7 +35,8 @@ const NavigationBar = () => {
     setActiveLink(value);
   };
   return (
-    <NavbarWrapper id='NavigationBar' expand="md" className={scrolled ? "scrolled" : ""} >
+    <Router>
+      <NavbarWrapper id='NavigationBar' expand="md" className={scrolled ? "scrolled" : ""} >
       <Logo src={process.env.PUBLIC_URL + '/sedibengTrainingLogo.png'} alt="Logo" />
       <HamburgerIcon
         src={process.env.PUBLIC_URL + '/menuBar.png'}
@@ -49,6 +51,8 @@ const NavigationBar = () => {
         <MenuItem href='#Contact' className={  activeLink === "Contact" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Contact")}  >Contact</MenuItem>
       </ListOfNavItems>
     </NavbarWrapper>
+    </Router>
+    
   );
 };
 
