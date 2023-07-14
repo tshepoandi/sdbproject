@@ -34,7 +34,7 @@ export const Title = styled.h1`
   margin-bottom: 20px;
   font-size: 30px;
   @media (max-width: 768px){
-    font-size:17px;
+    font-size:10px;
     width:150%;
   }
 `;
@@ -45,6 +45,7 @@ export const TextColorBlue = styled.span`
 
 export const TextColorWhite = styled.span`
   color: #ffffff;
+  
 `;
 
 export const CallToActionButton = styled.button`
@@ -59,3 +60,11 @@ export const CallToActionButton = styled.button`
     background-color: #ff66cc;
   }
 `;
+
+export const Heading = styled.div`
+  color:white;
+  font-weight:bold;
+  @media (max-width: 768px){
+      font-size:25px;
+    }
+`

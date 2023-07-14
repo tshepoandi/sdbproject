@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 export const ProgramTittle = styled.h1`
   color:#0F52BA;
-  font-size: 25px;
+  font-size: 20px;
+  @media (max-width: 768px){
+    font-size:15px;
+  }
 `
 
 
@@ -39,13 +42,16 @@ export const Heading = styled.h1`
   font-size: 10px;
   margin-bottom: 10px;
   @media (max-width: 768px){
-    font-size:10px;
+    font-size:7px;
     margin-bottom:30px;
   }
 `;
 
 export const Paragraph = styled.p`
   font-size: 10px;
+  @media (max-width: 768px){
+    font-size: 7px;
+  }
 `;
 
 export const ListDiv = styled.div`
