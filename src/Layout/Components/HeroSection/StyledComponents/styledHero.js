@@ -48,11 +48,11 @@ export const TextColorWhite = styled.span`
 `;
 
 export const CallToActionButton = styled.button`
-  padding: 10px 20px;
+  padding: 15px 25px;
   background-color: blue;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
   &:hover {
