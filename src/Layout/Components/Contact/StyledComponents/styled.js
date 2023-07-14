@@ -52,10 +52,12 @@ export const Heading = styled.h1`
 `
 
 export const Divider = styled.div`
+  
   display:flex;
   flex-direction:column;
   justify-content: space-between;
   margin:10%;
+  
 `
 
 export const AboutUs = styled.h1`
