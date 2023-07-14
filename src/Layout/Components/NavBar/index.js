@@ -6,15 +6,14 @@ import {
   ListOfNavItems,
   HamburgerIcon
 } from './StyledComponents/styledNavbar.js';
-import { BrowserRouter as Router } from "react-router-dom";
 
-  const NavigationBar = () => {
+const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const [activeLink, setActiveLink] = useState("Home");
+    const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -35,8 +34,7 @@ import { BrowserRouter as Router } from "react-router-dom";
     setActiveLink(value);
   };
   return (
-    <Router>
-      <NavbarWrapper id='NavigationBar' expand="md" className={scrolled ? "scrolled" : ""} >
+    <NavbarWrapper id='NavigationBar' expand="md" className={scrolled ? "scrolled" : ""} >
       <Logo src={process.env.PUBLIC_URL + '/sedibengTrainingLogo.png'} alt="Logo" />
       <HamburgerIcon
         src={process.env.PUBLIC_URL + '/menuBar.png'}
@@ -48,11 +46,9 @@ import { BrowserRouter as Router } from "react-router-dom";
         <MenuItem className={ activeLink === "Home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Home")}>Home</MenuItem>
         <MenuItem className={ activeLink === "OurVision" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("OurVision")} >Our Mission</MenuItem>
         <MenuItem className={ activeLink === "Programmes" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Programmes")} >Programmes</MenuItem>
-        <MenuItem href='#Contact' className={  activeLink === "Contact" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Contact")}  >Contact</MenuItem>
+        <MenuItem className={  activeLink === "Contact" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Contact")}  >Contact</MenuItem>
       </ListOfNavItems>
     </NavbarWrapper>
-    </Router>
-    
   );
 };
 
