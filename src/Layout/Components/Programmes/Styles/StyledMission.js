@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 export const ProgramTittle = styled.h1`
   color:#0F52BA;
+  font-size: 25px;
 `
 
 
@@ -22,6 +23,7 @@ export const Photo = styled.img`
   height: auto;
   object-fit: cover;
   margin-top:30px;
+  margin-left:2%;
   border-radius:10px;
   @media (max-width: 768px){
   width:100%;
@@ -34,7 +36,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 15px;
+  font-size: 10px;
   margin-bottom: 10px;
   @media (max-width: 768px){
     font-size:10px;
