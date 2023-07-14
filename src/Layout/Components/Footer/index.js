@@ -23,8 +23,6 @@ const FooterItem = styled.p`
 const Footer = () => {
   // Generate random content for the footer
   const footerContent = [
-    'Contact us',
-    'About',
     'Terms of Service',
     'Privacy Policy',
     'FAQ',

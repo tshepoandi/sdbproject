@@ -35,7 +35,7 @@ export const MenuItem = styled.li `
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
+    width: 30%;
   }
 `;
 
@@ -43,9 +43,9 @@ export const ListOfNavItems = styled.ul `
   display: flex;
   flex-direction: row;
   margin-right: 10%;
-
   @media (max-width: 768px) {
-    padding-top:35%;
+    padding-top:50%;
+    padding-left:25%;
     flex-direction: column;
     position: absolute;
     top: 90%;
