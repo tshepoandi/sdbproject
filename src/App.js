@@ -1,5 +1,6 @@
 import './App.css';
 import Contact from './Layout/Components/Contact';
+import { Footer } from './Layout/Components/Footer';
 import HeroPage from './Layout/Components/HeroSection';
 
 import NavigationBar from './Layout/Components/NavBar';
@@ -13,8 +14,9 @@ function App() {
     <HeroPage id="Home"/>
     <OurMission id="OurMission"/>
     <Programmes id="Programmes"/>
-    <CompanyStructure/>
+    {/* <CompanyStructure/> */}
     <Contact/>
+ 
   </>
   )
 }
