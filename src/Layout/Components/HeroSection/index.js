@@ -3,7 +3,7 @@ import {HeroWrapper,ContentWrapper,CallToActionButton,HeroImage,Title, TextColor
 
 const HeroPage = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper id="OurVision">
       <HeroImage src={process.env.PUBLIC_URL + '/teacher.jpg'} alt="Hero Image" />
       <ContentWrapper>
         <Heading>Sedibeng Training</Heading>

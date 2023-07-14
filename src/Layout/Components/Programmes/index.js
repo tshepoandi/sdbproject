@@ -2,7 +2,7 @@ import React from 'react'
 import { Table,TableBody,TableCell,TableContainer,TableHead,TableHeadCell,TableRow, Container,Photo,ContentWrapper,Heading,Paragraph, ProgramTittle, NambDiv, ListDiv, List, ListItem } from './Styles/StyledMission';
 const Programmes = () => {
   return (
-    <NambDiv>
+    <NambDiv id='Programmes'>
       <Container>
         <Photo src={process.env.PUBLIC_URL + '/welder.jpg'} alt="Photo" />
         <ContentWrapper>

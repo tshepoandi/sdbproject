@@ -28,7 +28,7 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  padding: 10px;
+  padding: 0px 10px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;

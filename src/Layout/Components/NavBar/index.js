@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   NavbarWrapper,
   MenuItem,
@@ -13,9 +13,28 @@ const NavigationBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+    const [activeLink, setActiveLink] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  };
   return (
-    <NavbarWrapper id='NavigationBar'>
+    <NavbarWrapper id='NavigationBar' expand="md" className={scrolled ? "scrolled" : ""} >
       <Logo src={process.env.PUBLIC_URL + '/sedibengTrainingLogo.png'} alt="Logo" />
       <HamburgerIcon
         src={process.env.PUBLIC_URL + '/menuBar.png'}
@@ -24,10 +43,10 @@ const NavigationBar = () => {
         onClick={toggleMenu}
       />
       <ListOfNavItems isOpen={isOpen}>
-        <MenuItem className="navItem">Home</MenuItem>
-        <MenuItem className="navItem">Our Vision</MenuItem>
-        <MenuItem className="navItem">Our Mission</MenuItem>
-        <MenuItem className="navItem">Contact</MenuItem>
+        <MenuItem className={ activeLink === "Home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Home")}>Home</MenuItem>
+        <MenuItem className={ activeLink === "OurVision" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("OurVision")} >Our Mission</MenuItem>
+        <MenuItem className={ activeLink === "Programmes" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Programmes")} >Programmes</MenuItem>
+        <MenuItem className={  activeLink === "Contact" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Contact")}  >Contact</MenuItem>
       </ListOfNavItems>
     </NavbarWrapper>
   );

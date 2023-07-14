@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   return (
-    <Divider>
+    <Divider id='Contact'>
       <div style={{ position: 'relative', zIndex:"-13"}}>
         <Image src={process.env.PUBLIC_URL+"/aboutus.jpg"} alt="About Us" style={{filter: "brightness(50%)"}} />
         <div
