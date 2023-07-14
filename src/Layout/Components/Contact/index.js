@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
 import { FormGroup } from 'react-bootstrap';
-import { Button, ContactForm, Input, Label, TextArea } from './StyledComponents/styled';
+import { AboutUs, Button, ContactForm, Divider, Heading, Input, Label, TextArea } from './StyledComponents/styled';
 // import 
 
 const Contact = () => {
@@ -17,8 +17,14 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <Divider>
+      <AboutUs>
+        About Us
+      </AboutUs>
        <ContactForm onSubmit={handleSubmit}>
+          <Heading>
+            Contact Us
+          </Heading>
           <FormGroup>
           {/* <Label>Email:</Label> */}
           <Input
@@ -51,7 +57,7 @@ const Contact = () => {
         </FormGroup>
         <Button type="submit">Submit</Button>
       </ContactForm>
-    </div>
+    </Divider>
    
   );
 };
