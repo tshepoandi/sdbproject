@@ -46,7 +46,7 @@ const NavigationBar = () => {
         <MenuItem className={ activeLink === "Home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Home")}>Home</MenuItem>
         <MenuItem className={ activeLink === "OurVision" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("OurVision")} >Our Mission</MenuItem>
         <MenuItem className={ activeLink === "Programmes" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Programmes")} >Programmes</MenuItem>
-        <MenuItem className={  activeLink === "Contact" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Contact")}  >Contact</MenuItem>
+        <MenuItem href='#Contact' className={  activeLink === "Contact" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("Contact")}  >Contact</MenuItem>
       </ListOfNavItems>
     </NavbarWrapper>
   );

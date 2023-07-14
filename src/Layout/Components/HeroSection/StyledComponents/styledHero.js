@@ -31,8 +31,8 @@ export const ContentWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  margin-bottom: 20px;
-  font-size: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
   @media (max-width: 768px){
     font-size:10px;
     width:150%;
@@ -64,6 +64,7 @@ export const CallToActionButton = styled.button`
 export const Heading = styled.div`
   color: #0F52BA;
   font-weight:bold;
+  font-size: 60px;
   @media (max-width: 768px){
       font-size:25px;
     }
