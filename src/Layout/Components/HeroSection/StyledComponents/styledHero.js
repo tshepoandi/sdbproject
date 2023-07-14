@@ -62,7 +62,7 @@ export const CallToActionButton = styled.button`
 `;
 
 export const Heading = styled.div`
-  color:white;
+  color: #0F52BA;
   font-weight:bold;
   @media (max-width: 768px){
       font-size:25px;
