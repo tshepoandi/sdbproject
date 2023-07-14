@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const NavbarWrapper = styled.nav`
+export const NavbarWrapper = styled.nav `
   justify-content: space-around;
   width: 100%;
   background-color: #0F52BA;
@@ -14,20 +14,19 @@ export const NavbarWrapper = styled.nav`
   position:fixed;
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.img `
   width: 80px;
   height:80px;
   border-radius:10px;
 `;
 
-export const MenuItem = styled.li`
+export const MenuItem = styled.li `
   display: inline-block;
   padding: 10px;
-  margin-left: 30%;
   cursor: pointer;
   &:hover {
     background-color: #FF66CC;
-    color: black;
+    color: white;
     border-radius: 10px;
   }
   @media (max-width: 768px) {
@@ -40,10 +39,10 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const ListOfNavItems = styled.ul`
+export const ListOfNavItems = styled.ul `
   display: flex;
   flex-direction: row;
-  margin-right: 60px;
+  margin-right: 10%;
 
   @media (max-width: 768px) {
     padding-top:35%;
@@ -60,7 +59,7 @@ export const ListOfNavItems = styled.ul`
   }
 `;
 
-export const HamburgerIcon = styled.img`
+export const HamburgerIcon = styled.img `
   display: none;
   position: fixed;
   cursor: pointer;
@@ -72,6 +71,6 @@ export const HamburgerIcon = styled.img`
     width: 25px;
     cursor: pointer;
     margin-right: 50px;
-    
+
   }
 `;

@@ -1,4 +1,38 @@
-.navItem:hover {
+/* .navItem:hover {
     color: pink;
     border-color: black;
+} */
+
+
+/* For WebKit browsers (Chrome, Safari) */
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #0F52BA;
+    /* Color of the handle */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #FF66CC;
+    /* Color of the handle on hover */
 }
