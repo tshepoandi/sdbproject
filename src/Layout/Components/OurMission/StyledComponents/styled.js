@@ -23,6 +23,9 @@ export const Statement = styled.p`
   text-align: center;
   width: 90%;
   max-width: 600px;
+  @media (max-width: 768px){
+    font-size:0.5rem;
+  }
 `;
 
 export const PinkText = styled.span`
@@ -36,5 +39,8 @@ export const Heading = styled.h1`
   justify-content:center;
   text-align: center;
   color:#0F52BA;
+  @media (max-width: 768px){
+    font-size:2rem;
+  }
 
 `

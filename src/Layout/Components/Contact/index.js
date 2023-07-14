@@ -28,17 +28,18 @@ const Contact = () => {
             transform: 'translate(-50%, -50%)',
             textAlign: 'center',
             color: 'white',
+            fontSize: '5px',
           }}>
           <AboutUs>About Us</AboutUs>
-          <p>
+          <Paragraph>
             Sedibeng Training Centre has been in the vocational training business since 1975, first entering the market as Vaal Triangle Training Centre.
-          </p>
-          <p>
+          </Paragraph>
+          <Paragraph>
             With the enactment of the Skills Development Act, 1998, the Centre was registered as an association incorporated under Section 21 of the Companies Act of 1973 in March 2000, trading as SEDIBENG TRAINING CENTRE.
-          </p>
-          <p>
+          </Paragraph>
+          <Paragraph>
             With change came better opportunities and enhancement for our country, and therefore, the new dispensation meant that certain adjustments needed to be made in order to accommodate the different rules and regulations pertaining thereto.
-          </p>
+          </Paragraph>
         </div>
     </div>
       

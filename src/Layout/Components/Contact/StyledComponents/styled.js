@@ -49,6 +49,9 @@ export const Button = styled.button`
 export const Heading = styled.h1`
   fontSize: 100px;
   color:#0F52BA;
+  @media (max-width: 768px){
+    fontSize:50px;
+  }
 `
 
 export const Divider = styled.div`
@@ -61,13 +64,19 @@ export const Divider = styled.div`
 `
 
 export const AboutUs = styled.h1`
-  font-size:5rem;
+  fontSize:5rem;
   color:#0F52BA;
+  @media (max-width: 768px){
+    fontSize:1rem;
+  }
 `
 
 
 export const Paragraph = styled.p`
-  font-size: 15px;
+  fontSize: 15px;
+  @media (max-width: 768px){
+    fontSize:1px;
+  }
 `
 
 export const Image = styled.img`
