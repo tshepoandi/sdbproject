@@ -1,10 +1,11 @@
 import './App.css';
+import Contact from './Layout/Components/Contact';
 import HeroPage from './Layout/Components/HeroSection';
-import MecaTable from './Layout/Components/MercaCourses';
 
 import NavigationBar from './Layout/Components/NavBar';
 import OurMission from './Layout/Components/OurMission';
 import Programmes from './Layout/Components/Programmes';
+import CompanyStructure from './Layout/Components/Structure';
 function App() {
   return (
   <>
@@ -12,6 +13,8 @@ function App() {
     <HeroPage id="Home"/>
     <OurMission id="OurMission"/>
     <Programmes id="Programmes"/>
+    <CompanyStructure/>
+    <Contact/>
   </>
   )
 }
