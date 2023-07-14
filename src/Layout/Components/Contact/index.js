@@ -78,6 +78,17 @@ const Contact = () => {
           />
         </FormGroup>
         <Button type="submit">Submit</Button>
+          <div style={{ marginTop: '20px'}}>
+            <a href="https://www.qcto.org.za/">
+              <Image src={process.env.PUBLIC_URL+ '/qcto.png' } alt="First Logo" style={{ width: '25%', marginRight: '10px' }} />
+            </a>
+            <a href="https://www.saqa.org.za/">
+              <Image src={process.env.PUBLIC_URL+ '/SAQA.jpg'} alt="Second Logo" style={{ width: '20%', marginRight: '10px' }} />
+            </a>
+            <a href="w.wrseta.org.za">
+              <Image src={process.env.PUBLIC_URL+ '/Setalogo.png'} alt="Third Logo" style={{ width: '25%' }} />
+            </a>
+      </div>
       </ContactForm>
     </Divider>
    
